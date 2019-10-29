@@ -61,12 +61,23 @@ class App extends React.Component {
     })
   };
 
+  deleteCompleted = e => {
+    console.log("button works!")
+    e.preventDefault();
+    this.setState({
+      tasks: this.state.tasks.filter(task => {
+        return !task.completed
+      })
+    })
+  }
+
   render() {
     return (
       <div>
         <h1>Todo List</h1>
         <TodoForm addTask={this.addTask} />
-        <TodoList 
+        <TodoList
+        deleteCompleted= {this.deleteCompleted} 
         toggleCompleted= {this.toggleCompleted}
         tasks={this.state.tasks} />
       </div>
