@@ -3,23 +3,7 @@ import ReactDOM from "react-dom";
 import TodoForm from "./components/TodoComponents/TodoForm";
 import TodoList from './components/TodoComponents/TodoList';
 
-const data = [
-  {
-    task: "Clean Room",
-    id: 1,
-    completed: false
-  },
-  {
-    task: "Rearrange Furniture",
-    id: 2,
-    completed: false
-  },
-  {
-    task: "Do Laundry",
-    id: 3,
-    completed: false
-  }
-];
+const data = [];
 console.log(data);
 
 class App extends React.Component {
@@ -73,13 +57,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>Todo List</h1>
-        <TodoForm addTask={this.addTask} />
+      <div className="todo_list">
+        <h1 className="heading">Todo List</h1>
+        <div className="form">
+        <TodoForm addTask={this.addTask}/>
+        </div>
         <TodoList
         deleteCompleted= {this.deleteCompleted} 
         toggleCompleted= {this.toggleCompleted}
-        tasks={this.state.tasks} />
+        tasks={this.state.tasks}/>
       </div>
     );
   }
