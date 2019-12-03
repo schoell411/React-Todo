@@ -1,5 +1,8 @@
 .taskCompleted {
     text-decoration: line-through;
+    background-color: blue;
+    color: red;
+    width: 50%;
 }
 
 .heading {
@@ -11,10 +14,10 @@
 .todo_list {
     margin: 4rem;
     padding: 1rem 3rem;
-    border: 1px dashed grey;
+    border: 10px dashed teal;
     height: 100vh;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(15,44,59,1) 52%, rgba(70,252,207,1) 100%);
+    background: grey;
+
 }
 
 .form {
