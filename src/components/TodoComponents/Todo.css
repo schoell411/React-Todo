@@ -1,0 +1,26 @@
+.taskCompleted {
+    text-decoration: line-through;
+    background-color: blue;
+    color: red;
+    width: 50%;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.todo_list {
+    margin: 4rem;
+    padding: 1rem 3rem;
+    border: 10px dashed teal;
+    height: 100vh;
+    background: grey;
+
+}
+
+.form {
+    margin: 4rem;
+    
+}
